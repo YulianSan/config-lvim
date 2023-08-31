@@ -36,6 +36,9 @@ vim.opt.shiftwidth = 4
 vim.api.nvim_set_keymap('n', 'gt', ':bn<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gT', ':bp<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gx', ':bd<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', 'jj', '<Esc>', {})
+vim.api.nvim_set_keymap('n', '<Tab>', '>>', {})
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', {})
 
 lvim.builtin.alpha.dashboard.section.header.val = {
     [[          _____                    _____                    _____                    _____                    _____                _____          ]],
