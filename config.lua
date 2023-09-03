@@ -7,6 +7,14 @@ lvim.plugins = {
     { "RRethy/vim-hexokinase" },
     { "mg979/vim-visual-multi" },
     {
+        'rmagatti/goto-preview',
+        config = function()
+            require('goto-preview').setup {
+                default_mappings = true;
+            }
+        end
+    },
+    {
         "lukas-reineke/indent-blankline.nvim",
         config = function()
             vim.opt.termguicolors = true
