@@ -3,6 +3,9 @@ lvim.colorscheme = "lunar"
 
 vim.opt.colorcolumn = "80"
 vim.opt.list = true
+vim.cmd(
+    'autocmd ColorScheme * highlight ColorColumn guibg=#020617 ctermbg=235'
+)
 
 lvim.plugins = {
     { "RRethy/vim-hexokinase" },
