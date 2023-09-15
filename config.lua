@@ -1,3 +1,6 @@
+require("emmet").config()
+require("telescopeTheme").config()
+
 vim.opt.relativenumber = true
 lvim.colorscheme = "lunar"
 
