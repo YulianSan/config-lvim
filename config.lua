@@ -44,7 +44,8 @@ lvim.plugins = {
         end
     },
     { "tpope/vim-surround" },
-    { 'ggandor/lightspeed.nvim' }
+    { 'ggandor/lightspeed.nvim' },
+    { 'christoomey/vim-tmux-navigator' },
 }
 
 vim.opt.tabstop = 4
