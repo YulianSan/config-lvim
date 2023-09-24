@@ -5,6 +5,7 @@ require("lualineTheme").config()
 vim.opt.relativenumber = true
 lvim.colorscheme = "lunar"
 
+lvim.format_on_save = true
 vim.opt.colorcolumn = "80"
 vim.opt.list = true
 vim.cmd(
@@ -18,7 +19,7 @@ lvim.plugins = {
         'rmagatti/goto-preview',
         config = function()
             require('goto-preview').setup {
-                default_mappings = true;
+                default_mappings = true,
             }
         end
     },
@@ -89,7 +90,7 @@ lvim.builtin.alpha.dashboard.section.header.val = {
     [[                                                                                                                                                  ]]
 }
 local function footer()
-	return "SANDEV"
+    return "SANDEV"
 end
 
 lvim.builtin.alpha.dashboard.section.footer.val = footer()
