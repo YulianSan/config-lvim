@@ -12,6 +12,10 @@ vim.cmd(
     'autocmd ColorScheme * highlight ColorColumn guibg=#15161f ctermbg=235'
 )
 
+vim.cmd(
+    'autocmd BufWinEnter,WinEnter term://* startinsert'
+)
+
 lvim.plugins = {
     { "RRethy/vim-hexokinase" },
     { "mg979/vim-visual-multi" },
@@ -63,6 +67,8 @@ vim.opt.shiftwidth = 4
 vim.api.nvim_set_keymap('n', 'gt', ':bn<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gT', ':bp<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'gx', ':bd<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '\\', ':ToggleTerm direction=float<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '\\', '<C-\\><C-n><C-w>l', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', {})
 
 lvim.builtin.alpha.dashboard.section.header.val = {
