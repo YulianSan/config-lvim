@@ -1,6 +1,7 @@
 require("emmet").config()
 require("telescopeTheme").config()
 require("lualineTheme").config()
+reload("keymaps")
 
 vim.opt.relativenumber = true
 lvim.colorscheme = "lunar"
@@ -64,9 +65,6 @@ lvim.plugins = {
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.api.nvim_set_keymap('n', 'gt', ':bn<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'gT', ':bp<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', 'gx', ':bd<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '\\', ':ToggleTerm direction=float<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('t', '\\', '<C-\\><C-n><C-w>l', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('i', 'jj', '<Esc>', {})
