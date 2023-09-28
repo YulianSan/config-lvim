@@ -61,6 +61,9 @@ lvim.plugins = {
             end)
         end,
     },
+    { 'tpope/vim-dadbod' },
+    { 'kristijanhusak/vim-dadbod-ui' },
+    { 'kristijanhusak/vim-dadbod-completion' },
 }
 
 vim.opt.tabstop = 4
