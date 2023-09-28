@@ -6,7 +6,9 @@ reload("keymaps")
 vim.opt.relativenumber = true
 lvim.colorscheme = "lunar"
 
-lvim.format_on_save = true
+lvim.format_on_save.enabled = true
+lvim.format_on_save.pattern = { "*.lua", "*.php", "*.js", "*.html", "*.css" }
+
 vim.opt.colorcolumn = "80"
 vim.opt.list = true
 vim.cmd(
