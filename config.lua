@@ -2,12 +2,22 @@ require("emmet").config()
 require("telescopeTheme").config()
 require("lualineTheme").config()
 reload("keymaps")
+reload("csharp")
 
 vim.opt.relativenumber = true
 lvim.colorscheme = "lunar"
 
 lvim.format_on_save.enabled = true
-lvim.format_on_save.pattern = { "*.lua", "*.php", "*.js", "*.html", "*.css" }
+lvim.format_on_save.pattern = {
+    "*.lua",
+    "*.php",
+    "*.js",
+    "*.html",
+    "*.css",
+    "*.cs",
+    "*.json",
+    "*.jsx"
+}
 
 vim.opt.colorcolumn = "80"
 vim.opt.list = true
@@ -63,9 +73,6 @@ lvim.plugins = {
             end)
         end,
     },
-    { 'tpope/vim-dadbod' },
-    { 'kristijanhusak/vim-dadbod-ui' },
-    { 'kristijanhusak/vim-dadbod-completion' },
 }
 
 vim.opt.tabstop = 4
